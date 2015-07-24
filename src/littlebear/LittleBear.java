@@ -19,12 +19,30 @@ public class LittleBear {
         speak("results:");
 //        speak(salutation);
 //        speak(farewell);
-        add(x, y);
+        speak( add(x, y) );
 //        subtract(9, 3);
 //        multiply(2, 3);
 //        divide(9, 0);
         squareroot(x);
         
+        // 7-23-15 first arrays
+        //arrays
+        //david made me do this
+        
+        int numbers[] = new int [10];
+        
+        for (int i=0; i <= 9; i++)
+            numbers[i]=scanner.nextInt();
+        
+        numbers[0]=1;
+        
+        for (int i=0; i <= 9; i++)
+            speak(numbers[i]);
+        boolean isAlive = false;
+        if (!isAlive)
+            isAlive=false;
+        speak(isAlive);
+       
         
     }
 
@@ -32,9 +50,18 @@ public class LittleBear {
     public static void speak(String asd) {
         System.out.println(asd);
     }
-
-    public static void add(int a, int b) {
+    
+    public static void speak(int asd) {
+        System.out.println(asd);
+    }
+    
+    public static void speak(boolean asd) {
+        System.out.println(asd);
+    }
+    
+    public static int add(int a, int b) {
         System.out.println("The sum of "+ a + " and " + b + " is " + (a + b));
+        return a + b;
     }
 
     public static void subtract(int a, int b) {
